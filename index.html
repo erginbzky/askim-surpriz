@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Sana Küçük Bir Sürprizim Var ❤️</title>
+  <style>
+    :root{--pink:#e85d8e;--deep:#a83262;--soft:#fff0f5;--ink:#63384b}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:linear-gradient(180deg,#fff8fb 0%,#ffeaf2 55%,#fff7fa 100%);overflow-x:hidden}
+    .hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+    .heart{position:absolute;bottom:-40px;color:#f28bb0;opacity:.65;animation:floatUp linear forwards}
+    @keyframes floatUp{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+    main{position:relative;z-index:1;width:min(900px,92%);margin:auto;padding:30px 0 60px}
+    .hero{text-align:center;min-height:78vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:30px 10px}
+    .eyebrow{letter-spacing:3px;text-transform:uppercase;font:12px Arial,sans-serif;color:#c36a8b}
+    h1{font-size:clamp(2.3rem,8vw,4.8rem);line-height:1.08;color:var(--deep);margin:18px 0}
+    .hero p{font-size:1.12rem;max-width:520px;line-height:1.7}
+    button{border:0;border-radius:999px;background:linear-gradient(135deg,#f48bb0,#d94e82);color:white;padding:15px 28px;font-size:1rem;font-weight:bold;box-shadow:0 9px 22px #d94e8240;cursor:pointer;transition:transform .2s}
+    button:active{transform:scale(.97)}
+    .hint{font:12px Arial,sans-serif;color:#a66c82;margin-top:13px}
+    #surprise{display:none}
+    section{margin:26px 0;padding:clamp(22px,5vw,38px);background:#ffffffc9;border:1px solid #f7cbd9;border-radius:24px;box-shadow:0 12px 35px #a8326210}
+    h2{text-align:center;color:var(--deep);font-size:clamp(1.65rem,5vw,2.2rem);margin:0 0 20px}
+    .letter{font-size:1.08rem;line-height:1.9;white-space:pre-line}
+    .signature{text-align:right;color:var(--deep);font-style:italic;font-size:1.2rem;margin-top:20px}
+    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .gallery figure{margin:0}
+    .gallery img{display:block;width:100%;height:clamp(210px,48vw,420px);object-fit:cover;border-radius:18px;box-shadow:0 7px 20px #63384b20}
+    figcaption{text-align:center;font-size:.95rem;margin-top:9px;color:#a65b79}
+    .counter{text-align:center}
+    .count-number{font-size:clamp(2.8rem,11vw,5rem);font-weight:bold;color:var(--pink);line-height:1.1}
+    .count-label{font:13px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#a66c82}
+    .counter small{display:block;margin-top:12px}
+    .question{text-align:center;font-size:1.25rem;line-height:1.6}
+    .answers{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+    #answer{min-height:28px;text-align:center;color:var(--deep);font-size:1.1rem;margin-top:18px}
+    .music-note{text-align:center;line-height:1.7}
+    .spotify-wrap{margin:18px auto 0;max-width:600px}
+    iframe{width:100%;height:232px;border:0;border-radius:14px}
+    footer{text-align:center;padding:28px 10px 0;color:#b56a87;font-size:1rem}
+    @media(max-width:560px){.gallery{grid-template-columns:1fr}.gallery img{height:auto;max-height:460px}.hero{min-height:75vh}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.heart{display:none}button{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+  <main>
+    <header class="hero">
+      <div class="eyebrow">Sadece ikimize özel</div>
+      <h1>Sana küçük bir sürprizim var ❤️</h1>
+      <p>Biraz sevgi, birkaç güzel anı ve sana söylemek istediklerim...</p>
+      <button id="openBtn" type="button">Sürprizi aç ❤️</button>
+      <div class="hint">Hazırsan, bu küçük dünya senin için…</div>
+    </header>
+
+    <div id="surprise">
+      <section>
+        <h2>Sana bir mektubum var 💌</h2>
+        <div class="letter">Bazen sana olan sevgimi anlatacak doğru kelimeleri bulmak zor oluyor. Ama şunu bilmeni istiyorum: hayatımda olduğun için çok mutluyum.
+
+Seninle paylaştığım küçük anlar bile benim için çok değerli. Birlikte güldüğümüz, konuştuğumuz ve sadece yan yana olduğumuz zamanları biriktiriyorum.
+
+Bu sayfa belki küçücük bir sürpriz ama içindeki her şeyin anlamı büyük: iyi ki varsın, iyi ki hayatımdasın. ❤️</div>
+        <div class="signature">Seni çok seven… ❤️</div>
+      </section>
+
+      <section>
+        <h2>Bizden birkaç güzel anı 📸</h2>
+        <div class="gallery">
+          <figure><img src="images/biz-1.jpeg" alt="Birlikte çekildiğimiz fotoğraf 1"><figcaption>Güzel bir anımız… ❤️</figcaption></figure>
+          <figure><img src="images/biz-2.jpeg" alt="Birlikte çekildiğimiz fotoğraf 2"><figcaption>Birlikte daha nice anılara… 💗</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="counter">
+        <h2>Birlikte geçen zamanımız ⏳</h2>
+        <div class="count-number" id="days">—</div>
+        <div class="count-label">gündür birlikte</div>
+        <small>Başlangıç: 12 Ekim 2026 ❤️</small>
+      </section>
+
+      <section>
+        <h2>Sana minicik bir sorum var 💞</h2>
+        <div class="question">Benimle daha nice güzel anılar biriktirmeye var mısın?</div>
+        <div class="answers">
+          <button type="button" class="answerBtn" data-answer="En güzel anılarımız daha yeni başlıyor. Seni çok seviyorum! ❤️">Evet, hem de çok! ❤️</button>
+          <button type="button" class="answerBtn" data-answer="O zaman bu sürpriz, daha güzel günlerin başlangıcı olsun. 💗">Kesinlikle! 💗</button>
+        </div>
+        <div id="answer" aria-live="polite"></div>
+      </section>
+
+      <section>
+        <h2>Bizim şarkımız 🎵</h2>
+        <p class="music-note">Sürprizi açtığında şarkımızı da buraya getirdim. Spotify oynatıcısındaki oynat düğmesine dokunarak dinleyebilirsin. Müzik, Spotify'ın oynatma izinlerine bağlı olarak çalışır.</p>
+        <div class="spotify-wrap">
+          <iframe title="Bizim şarkımız - Spotify" src="https://open.spotify.com/embed/episode/3zfhJ0F3TRrke29NN64COC?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </section>
+      <footer>Her şeyin en güzeli seninle olsun. ❤️</footer>
+    </div>
+  </main>
+
+  <script>
+    const openBtn = document.getElementById('openBtn');
+    const surprise = document.getElementById('surprise');
+
+    openBtn.addEventListener('click', () => {
+      surprise.style.display = 'block';
+      openBtn.textContent = 'Sürprizimiz açıldı ❤️';
+      openBtn.disabled = true;
+      surprise.scrollIntoView({behavior:'smooth', block:'start'});
+      // Spotify embed is revealed after the visitor's tap. Playback may still
+      // require tapping Play inside Spotify due to browser/Spotify restrictions.
+      createHearts(22);
+    });
+
+    // Calendar-day counter from 12 October 2026, using local dates to avoid
+    // timezone/DST off-by-one errors. Before the start date, show a countdown.
+    function updateCounter(){
+      const start = new Date(2026, 9, 12);
+      const today = new Date();
+      const localToday = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+      const diff = Math.floor((localToday - start) / 86400000);
+      const el = document.getElementById('days');
+      if(diff >= 0){ el.textContent = diff.toLocaleString('tr-TR'); }
+      else { el.textContent = (Math.abs(diff)).toLocaleString('tr-TR') + ' gün'; }
+    }
+    updateCounter();
+
+    document.querySelectorAll('.answerBtn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.getElementById('answer').textContent = btn.dataset.answer;
+        createHearts(12);
+      });
+    });
+
+    function createHearts(amount){
+      const holder = document.getElementById('hearts');
+      for(let i=0;i<amount;i++){
+        const heart = document.createElement('span');
+        heart.className = 'heart';
+        heart.textContent = Math.random() > .5 ? '❤' : '♥';
+        heart.style.left = Math.random()*100 + 'vw';
+        heart.style.fontSize = (14 + Math.random()*22) + 'px';
+        heart.style.animationDuration = (5 + Math.random()*6) + 's';
+        heart.style.animationDelay = (Math.random()*2) + 's';
+        holder.appendChild(heart);
+        setTimeout(() => heart.remove(), 13000);
+      }
+    }
+    setInterval(() => createHearts(2), 1800);
+  </script>
+</body>
+</html>
